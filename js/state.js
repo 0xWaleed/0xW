@@ -1,11 +1,14 @@
 function handleStateKey(key, value) {
   const stateHandlerName = `${key}Handler`;
-  if (typeof window['stateHandler'] == "function") {
-    window['stateHandler'](key, value);
+  let element;
+  if (typeof window["stateHandler"] == "function") {
+    window["stateHandler"](key, value);
   }
 
   if (typeof window[stateHandlerName] == "function") {
     window[stateHandlerName](value);
+  } else if ((element = document.getElementById(key))) {
+    element.innerText = value;
   }
 }
 
