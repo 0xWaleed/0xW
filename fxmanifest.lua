@@ -10,9 +10,5 @@ game 'gta5'
 client_script 'player/dsyncro/dsyncro.lua'
 client_script 'player/state.lua'
 
-ui_page 'ui.html'
-
-file 'ui.html'
 file 'js/state.js'
-
 file 'nui-state.lua'
