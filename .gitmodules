@@ -1,0 +1,3 @@
+[submodule "player/dsyncro"]
+	path = player/dsyncro
+	url = https://github.com/0xWaleed/dsyncro.git
