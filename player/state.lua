@@ -59,3 +59,8 @@ AddEventHandler('playerSpawned', function()
     g_state.health = health
     g_state.armour = armour
 end)
+
+
+exports('setState', function(key, value)
+    g_state[key] = value
+end)
