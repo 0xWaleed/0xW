@@ -3,7 +3,7 @@ name: 0xW-Deploy
 on:
   push:
     tags:
-      - "*"
+      - v*
 
 
 
