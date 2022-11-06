@@ -10,9 +10,6 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-22.04
-    strategy:
-      matrix:
-        node-version: [ 16.x ]
     steps:
       - uses: actions/checkout@v3
 
